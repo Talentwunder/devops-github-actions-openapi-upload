@@ -1,0 +1,9 @@
+name: "TW SaaS OpenAPI upload"
+description: "Generate Talentwunder API HTML documentation and upload documentation to S3"
+inputs:
+  service:
+    description: "Name of the service whose OpenAPI definition should be uploaded"
+    required: true
+runs:
+  using: "node16"
+  main: "dist/index.js"
